@@ -1,0 +1,351 @@
+<style>
+@charset "UTF-8";
+
+/* ----- LINKS ----- */
+
+/* LINK N = HOVER SILVER */
+
+.CLDS__LNK_N {
+	color: var(--CLIONDESIGNS-black);
+  font-family: inherit;
+  text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_N:hover {
+	color: var(--CLIONDESIGNS-silver);
+	transition: 0.3s ease-in-out;
+}
+
+/* LINK U = HOVER SILVER + UNDERLINE AN */
+
+.CLDS__LNK_U {
+  font-family: inherit;
+	position: relative;
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_U:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+  transform: scaleX(0);
+  height: 0.1pt;
+  bottom: 0;
+	left: 0;
+	background-color: var(--CLIONDESIGNS-black);
+	transform-origin: bottom left;
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_U:hover:after {
+	transform: scaleX(1);
+	height: 0.1pt;
+	background-color: var(--CLIONDESIGNS-silver);
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_U:hover {
+	color: var(--CLIONDESIGNS-silver);
+	transition: 0.3s ease-in-out;
+}
+
+/* LINK L = HOVER SILVER + UNDERLINE */
+
+.CLDS__LNK_L {
+  font-family: inherit;
+	position: relative;
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_L:after {
+	content: '';
+  position: absolute;
+  width: 100%;
+ 	height: 0.1pt;
+	opacity: 0;
+ 	bottom: 0;
+  left: 0;
+  background-color: var(--CLIONDESIGNS-black);
+  transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_L:hover:after {
+	height: 0.1pt;
+	opacity: 1;
+	background-color: var(--CLIONDESIGNS-silver);
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_L:hover {
+	color: var(--CLIONDESIGNS-silver);
+	transition: 0.3s ease-in-out;
+}
+
+/* LINK M = UNDERLINE */
+
+.CLDS__LNK_M {
+  font-family: inherit;
+	position: relative;
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_M:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+ 	height: 0.1pt;
+	opacity: 0;
+ 	bottom: 0;
+	left: 0;
+	background-color: var(--CLIONDESIGNS-black);
+	transition: 0.3s ease-in-out;
+}
+
+.CLDS__LNK_M:hover:after {
+	height: 0.1pt;
+	opacity: 1;
+	transition: 0.3s ease-in-out;
+}
+
+/* ----- BUTTONS ----- */
+
+/* BUTTON PREVIEW */
+.preview {
+  display: block;
+  position: static;
+  padding: 2rem 0 2rem 0;
+  left: 0;
+  right: 0;
+}
+
+/* BUTTON 01 = UNDERLINDE TO SOLID B */
+.CLDS__BTN-01 {
+	position: relative;
+	display:inline-block;
+	border-top: none;
+	border:1px solid var(--CLIONDESIGNS-black);
+	padding: 0.35rem 3.5rem 0.7rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+  font-family: 'Be Vietnam', sans-serif;
+  font-weight: 400;
+	font-size: 0.75rem;
+	text-decoration: none;
+	color: var(--CLIONDESIGNS-black);
+	transition: 0.5s ease-in-out;
+
+}
+
+.CLDS__BTN-01:before {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -0.35rem;
+	width: calc(100% + 4px);
+	height: calc(100% - 0.35rem);
+	color: var(--CLIONDESIGNS-black);
+	background: var(--CLIONDESIGNS-white);
+	transition: 0.5s ease-in-out;
+	transform-origin: top;
+	transform: scaleY(1);
+}
+
+.CLDS__BTN-01 .CLDS__BTN_SP {
+	position: relative;
+	z-index: 3;
+}
+
+
+.CLDS__BTN-01:hover:before {
+	transform: scaleY(0);
+	transition: 0.5s ease-in-out;
+}
+
+.CLDS__BTN-01-I {
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  height: max-content;
+	position: absolute;
+	z-index: 2;
+	Background: rgba(0, 0, 0, 0);
+	transition: 0.5s ease-in-out;
+}
+
+.CLDS__BTN-01-I:after {
+	content: '';
+	Background: rgba(0, 0, 0, 0);
+	transform-origin: bottom;
+	transform: scaleY(0);
+}
+
+.CLDS__BTN-01-I:hover {
+	transform: scaleY(1);
+	Background: rgba(0, 0, 0, 1);
+	transition: 0.5s ease-in-out;
+}
+
+.CLDS__BTN-01:hover {
+	color: var(--CLIONDESIGNS-white);
+	transition: 0.8s ease-in-out;
+}
+
+
+/* BUTTON 02 = BORDER S TO SOLID S*/
+
+.CLDS__BTN-02 {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	aspect-ratio: 50 / 7;
+	border:1px solid var(--CLIONDESIGNS-black);
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+  font-family: 'Be Vietnam Pro', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	text-decoration: none;
+	color: var(--CLIONDESIGNS-black);
+	transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-02:hover {
+	border-color: var(--CLIONDESIGNS-whitesmoke);
+	background-color: var(--CLIONDESIGNS-whitesmoke);
+	transition: 0.35s ease-in-out;
+}
+
+/* BUTTON 03 = SOLID B TO BORDER S*/
+
+.CLDS__BTN-03 {
+  display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+  height: 3rem;
+  aspect-ratio: 50 / 7;
+  border:1px solid var(--CLIONDESIGNS-black);
+  background-color: var(--CLIONDESIGNS-black);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--CLIONDESIGNS-white);
+	transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-03:hover {
+  color: var(--CLIONDESIGNS-black);
+  border-color: var(--CLIONDESIGNS-whitesmoke);
+  background-color: var(--CLIONDESIGNS-whitesmoke);
+  transition: 0.35s ease-in-out;
+}
+
+/* BUTTON 04 = CLDS SHAPE */
+
+.CLDS__BTN-04 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background: var(--CLIONDESIGNS-black);
+  color: var(--CLIONDESIGNS-black);
+  font-size: 0.75rem;
+  padding: 0.7rem 0.5rem 0.7rem 3.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  position: absolute;
+  text-transform: uppercase;
+  transition: 0.35s ease-in-out;
+}
+
+
+.CLDS__BTN-04:before {
+  content: "";
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 1px;
+  right: 1px;
+  display: block;
+  position: absolute;
+  background: var(--CLIONDESIGNS-white);
+  transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-04:hover:before {
+  background: var(--CLIONDESIGNS-black);
+  transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-04:hover {
+  color: var(--CLIONDESIGNS-white);
+  transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-04, .CLDS__BTN-04:before {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+}
+
+.CLDS__BTN-04-TXT, .CLDS__BTN-05-TXT {
+  display: block;
+  position: relative;
+
+}
+
+/* BUTTON 05 = CLDS SHAPE INVERT */
+
+.CLDS__BTN-05 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background: var(--CLIONDESIGNS-black);
+  color: var(--CLIONDESIGNS-black);
+  font-size: 0.75rem;
+  padding: 0.7rem 3.5rem 0.7rem 0.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  position: absolute;
+  text-transform: uppercase;
+  transition: 0.35s ease-in-out;
+}
+
+
+.CLDS__BTN-05:before {
+  content: "";
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 1px;
+  right: 1px;
+  display: block;
+  position: absolute;
+  background: var(--CLIONDESIGNS-white);
+  transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-05:hover:before {
+  background: var(--CLIONDESIGNS-black);
+  transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-05:hover {
+  color: var(--CLIONDESIGNS-white);
+  transition: 0.35s ease-in-out;
+}
+
+.CLDS__BTN-05, .CLDS__BTN-05:before {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
+}
+
+</style>

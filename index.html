@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" media="(prefers-color-scheme: dark)" href="ASSETS/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" media="(prefers-color-scheme: light)" href="ASSETS/apple-touch-icon_w.png">
+    <link rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: dark)" href="ASSETS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)" href="ASSETS/favicon-32x32_w.png">
+    <link rel="icon" type="image/png" sizes="16x16" media="(prefers-color-scheme: dark)" href="ASSETS/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" media="(prefers-color-scheme: light)" href="ASSETS/favicon-16x16_w.png">
+    <link rel="manifest" href="ASSETS/site.webmanifest">
+    <link rel="mask-icon" href="ASSETS/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title> CLIONDESIGNS — OFFICIAL SITE </title>
+    <link rel="preconnect" href="https://cdn.shopify.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
+    <link rel="stylesheet" href="CLDS.css">
+    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="links.css">
+
+    <style>
+    /* FONT */
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url(https://cdn.shopify.com/s/files/1/0603/6448/8836/files/CLDS-DIFINITY.woff2?v=1670783357);
+    @font-face {
+      font-family: 'CLDS-DIFINITY';
+      src: url(https://cdn.shopify.com/s/files/1/0603/6448/8836/files/CLDS-DIFINITY.woff2?v=1670783357) format('woff2'), url(https://cdn.shopify.com/s/files/1/0603/6448/8836/files/CLDS-DIFINITY.woff2?v=1670783357) format('woff');
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    /* ROOT */
+    :root {
+
+      /* CLIONDESIGNS COLOR */
+      --CLIONDESIGNS-black: #000000;
+      --CLIONDESIGNS-dimgrey: #696969;
+      --CLIONDESIGNS-whitesmoke: #f5f5f5;
+      --CLIONDESIGNS-silver: #c0c0c0;
+      --CLIONDESIGNS-white: #ffffff;
+
+      /* CLIONDESIGNS SIZES */
+      --CLIONDESIGNS-PADDING-WEB: {{ settings.CLDS_media_padding }}rem;
+      --CLIONDESIGNS-media-shadow-opacity: {{ settings.CLDS_media_shadow_opacity | divided_by: 100.0 }};
+      --CLIONDESIGNS-media-shadow-horizontal-offset: {{ settings.CLDS_media_shadow_horizontal_offset }}px;
+      --CLIONDESIGNS-media-shadow-vertical-offset: {{ settings.CLDS_media_shadow_vertical_offset }}px;
+      --CLIONDESIGNS-media-shadow-blur-radius: {{ settings.CLDS_media_shadow_blur }}px;
+      --CLIONDESIGNS-media-shadow-visible: {% if settings.CLDS_media_shadow_opacity > 0 %}1{% else %}0{% endif %};
+      --CLIONDESIGNS-page-width: {{ settings.CLDS_page_width | divided_by: 10 }}rem;
+
+      /* CLIONDESIGNS NAVBAR */
+      --CLIONDESIGNS-PADDING-NAV: 1rem;
+
+      /* FONTS */
+      --CLIONDESIGNS-LH_S: 1.5;
+      --CLIONDESIGNS-LH_P12: 1.5;
+      --CLIONDESIGNS-LH_P34: 1.5;
+      --CLIONDESIGNS-LH_P56: 1.5;
+      --CLIONDESIGNS-LH_P78: 1.5;
+      --CLIONDESIGNS-LH_P910: 1.5;
+      --CLIONDESIGNS-LH_05: 1.5;
+      --CLIONDESIGNS-LH_16: 1.5;
+      --CLIONDESIGNS-LH_27: 1.5;
+      --CLIONDESIGNS-LH_38: 1.5;
+      --CLIONDESIGNS-LH_49: 1.5;
+    }
+
+    /* GENERAL */
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit!important;
+      padding: 0!important;
+      margin: 0!important;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    /* HTML */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* BODY */
+    body {
+      min-width: fit-content;
+      min-height: 100vh;
+      width:100%;
+      background-color: var(--CLIONDESIGNS-black);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    </style>
+
+  </head>
+    <body class="cliondesigns--body">
+    <div class="section-2 wf-section">
+       <div class="div-block-3"><img style="width:80%!important" src="ASSETS/CLIONDESIGNS_CLDS_LOGO_Type_w.svg" alt="CLIONDESIGNS™"/></div>
+       <div class="div-block-5">
+          <p6 class="paragraph">© CLIONDESIGNS™</p6>
+       </div>
+    </div>
+  </body>
+
+</html>

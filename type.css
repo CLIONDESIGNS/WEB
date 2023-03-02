@@ -1,0 +1,179 @@
+<style>
+@charset "UTF-8";
+
+/* GENERAL */
+
+h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, p, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, small, small2, .nav__links {
+	display: block;
+  word-break: break-word;
+	margin-left: 0;
+	margin-right: 0;
+  text-decoration: none;
+}
+
+/* FONT Be Vietnam Pro Pro */
+
+h5, h6, h7, h8, h9, p, p2, p3, p4, p5, p6, p7, p8, p9, p10, small, small2, .nav__links {
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* FONT COLOR BLACK */
+
+h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, p, p3, p4, p5, p7, p9, small, .nav__links {
+	color: var(--CLIONDESIGNS-black);
+}
+
+/* FONT CLOLR DIMGREY */
+p2, p4, p6, p8, p10, small2 {
+	color: var(--CLIONDESIGNS-dimgrey);
+}
+
+/* HEADING */
+
+h0, h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+	color: var(--CLIONDESIGNS-black);
+	text-transform: uppercase;
+	margin-top: 0.67rem;
+	margin-bottom: 0.67rem;
+}
+
+/* HEADING 0 - 4*/
+
+h0, h1, h2, h3, h4, .nav__links {
+	font-family: "CLDS-DIFINITY", sans-serif;
+
+}
+
+/* HEADING 1, 2, 3, 4, 6, 7, 8, 9 */
+h1, h2, h3, h4, h6, h7, h8, h9 {
+	letter-spacing: 0.3rem;
+
+}
+
+/* HEADING 5 - 9 */
+
+h5, h6, h7, h8, h9 {
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* h0, h5 */
+h0, h5 {
+	font-size: 3.125rem;
+	letter-spacing: 0.5rem;
+  line-height: var(--CLIONDESIGNS-LH_05);
+}
+
+/* h1, h6 */
+h1, h6 {
+	font-size: 2.5rem;
+  line-height: var(--CLIONDESIGNS-LH_16);
+}
+
+/* h2, h7 */
+h2, h7 {
+	font-size: 2.1875rem;
+  line-height: var(--CLIONDESIGNS-LH_27);
+}
+
+/* h3, h8 */
+h3, h8 {
+	font-size: 1.875rem;
+  line-height: var(--CLIONDESIGNS-LH_38);
+}
+
+/* h4, h9 */
+h4, h9 {
+	font-size: 1.5625rem;
+  line-height: var(--CLIONDESIGNS-LH_49);
+}
+
+/* PARAGRAPH */
+
+p, p2, p3, p4, p5, p6, p7, p8, p9, p10 {
+	letter-spacing: 0.05rem;
+  font-weight: 300;
+}
+
+/* p, p2 */
+p, p2 {
+	font-size: 0.925rem;
+	margin-top: 0.9rem;
+	margin-bottom: 0.9rem;
+  line-height: var(--CLIONDESIGNS-LH_P12);
+}
+
+/* p3, p4 */
+p3, p4 {
+	font-size: 0.85rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+  line-height: var(--CLIONDESIGNS-LH_P34);
+}
+
+/* p5, p6 */
+p5, p6 {
+	font-size: 0.8125rem;
+	margin-top: 0.6rem;
+	margin-bottom: 0.6rem;
+  line-height: var(--CLIONDESIGNS-LH_P56);
+}
+
+/* p7, p8 */
+p7, p8 {
+  font-size: 0.75rem;
+	margin-top: 0.475rem;
+	margin-bottom: 0.475rem;
+  line-height: var(--CLIONDESIGNS-LH_P78);
+}
+
+/* p9, p10 */
+p9, p10 {
+  font-size: 0.675rem;
+	margin-top: 0.425rem;
+	margin-bottom: 0.425rem;
+  line-height: var(--CLIONDESIGNS-LH_P910);
+}
+
+/* SMALL 1 - 2 */
+
+small, small2 {
+	font-weight: 300;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	font-size: 0.625rem;
+	letter-spacing: 0.02rem;
+  line-height: var(--CLIONDESIGNS-LH_S);
+}
+
+a:empty,
+ul:empty,
+dl:empty,
+div:empty,
+section:empty,
+article:empty,
+p:empty,
+p2:empty,
+p3:empty,
+p3:empty,
+p4:empty,
+p5:empty,
+p6:empty,
+p7:empty,
+p8:empty,
+p9:empty,
+p10:empty,
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty,
+h7:empty,
+h8:empty,
+h9:empty,
+small:empty,
+small2:empty {
+  display: none;
+}
+
+</style>
